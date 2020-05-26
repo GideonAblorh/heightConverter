@@ -1,0 +1,28 @@
+.center{
+	background: #add8ea;
+	height: 600px;
+	width: 400px;
+	padding: 60px;
+	margin: auto;
+	font-family: sans-serif;
+	font-size: 22px;
+}
+.btn{
+	height: 30px;
+	border: none;
+	background-color: rgb(8, 196, 17);
+	border-radius: 5px;
+}
+#feet{
+	margin-left: 20px;
+	height: 20px;
+	width: 200px;
+	padding: 10px;
+	border: none;
+}
+#inches{
+	height: 20px;
+	width: 200px;
+	padding: 10px;
+	border: none;
+}

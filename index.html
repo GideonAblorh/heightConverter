@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Height Converter</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<div class="center">
+		<center>
+		<h1>Height Converter</h1>
+		<form id="main">
+			<label>Feet</label>
+			<input type="number" name="" id="feet" placeholder="feet" />
+			<br>
+			<br>
+			<label>Inches</label>
+			<input type="number" name="" id="inches" placeholder="inches" />
+			<br>
+			<br>
+			<button class="btn" type="submit">Convert to cm</button>
+		</form>
+		<div class="output" id="output"></div>
+	</center>
+	</div>
+
+
+
+	<script type="text/javascript">
+		var form = document.getElementById('main');
+		main.addEventListener('submit', (e) => {
+			e.preventDefault();
+			document.getElementById('output').style.visibility = 'visible';
+			var feet = document.getElementById('feet').value;
+			var inches = document.getElementById('inches').value;
+
+			var feetCenti = feet * 30.48;
+			var inchesCenti = inches * 2.84;
+			var total = feetCenti + inchesCenti;
+			output = document.querySelector('.output');
+			output.innerHTML =
+				'<h2 class = "total">' +
+				total +
+				'<span>' +
+				'cm' +
+				'</span>' +
+				'</h3>';
+			document.getElementById('main').reset();
+		});
+	</script>
+</body>
+
+</html
